@@ -17,22 +17,21 @@ export default function RootLayout({
     return (
       <html lang="en">
         <body>
-          <header className="flex bg-blue-100">
-            <div className="sm:container mx-auto px-16">
-              <div className="flex flex-row">
-                <Image className="flex-grow-0" src={'/hero.png'} alt="Image of me" width={100} height={100} />
-                <div className="flex-grow">
-                <nav>
-                  <ul className="flex gap-3 ">
-                    <li><Link href={`/`}>Main</Link></li>
-                    <li><Link href={`/resume`}>Resume</Link></li>
-                    <li><Link href={`/portfolio`}>Portfolio</Link></li>
-                    <li><Link href={`/about`}>About me</Link></li>
-                  </ul>
-                </nav>
+          <header id="header" className="bg-blue-100">
+            <div className="container grid grid-cols-5 mx-auto">
+                <Image className="" src={'/hero.png'} alt="Image of me" width={100} height={100} />
+                <div className="grid col-span-4 grid-rows-4 content-center">
+                  <div className="row-start-1 row-end-4 py-5 text-3xl">Bryan Paslay</div>
+                  <nav className="">
+                    <ul className="grid grid-cols-4">
+                      <li className=""><Link className="hover:font-bold" href={`/`}>Home</Link></li>
+                      <li className=""><Link className="hover:font-bold" href={`/resume`}>Resume</Link></li>
+                      <li className=""><Link className="hover:font-bold" href={`/portfolio`}>Project history</Link></li>
+                      <li className=""><Link className="hover:font-bold" href={`/about`}>About me</Link></li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
-            </div>
           </header>
           {children}
           </body>

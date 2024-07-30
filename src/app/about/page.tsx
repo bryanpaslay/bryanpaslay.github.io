@@ -1,5 +1,11 @@
 import React from "react";
 
 export default function Page() {
-    return <h1>Bryan Paslay</h1>
+    return <div className={`py-3 px-10 `}>
+      <h1>About me</h1>
+      <p>I have been working as a full stack engineer for the past 10 years with a focus on front end web development.  I have experience building high-volume client facing web applications and believe that I am a great fit for this position.  I love working with new tools and technologies and learning and growing my technical skills as well as my interpersonal skills.  I believe that it is vital to be able to work across all the layers of an application to build the best product possible.  By working in different areas, you gain a better understanding of the big picture and can work towards a common goal.  Working with other team members, to grow my own skills and help develop the skills of others, is vital to having a strong team and something I emphasize.  </p>
+      <p>I have a passion for UI/UX and believe that user experience is a key to any successful application.  Products should be intuitive and simple as well as cool and fun to use.  I enjoy working with people across all job functions and users and think that collaboration between different roles and teams helps everyone learn, grow, and develop the best possible product.  It is important to be able to work independently and without guidance but one must also be able to collaborate and ask for help when needed.  No one can know everything, so we need to leverage each other’s strengths.  </p>
+      <p>I have expertise in client-side applications and have built enterprise web applications from the ground up using React, Redux, JavaScript, HTML5, TypeScript, NodeJS, Webpack, etc.  I have in-depth knowledge and experience optimizing web applications for performance using caching, chunking, modules, limiting re-rendering, and other techniques and technologies.  </p>
+      <p>As a full stack engineer, I have worked on database design and queries, implemented back-end services and middle tier business logic, designed and implemented web services and APIs, and integrated with internal and external systems.  I have also done production triage, bug fixes, performance troubleshooting, and supported other teams.  It has been emphasized by my managers and coworkers that one of my greatest strengths is being able to take constructive criticisms and turn them into strengths.  This helps me to strengthen connections and relationships with the people I work with and grow personally and professionally.  </p>
+  </div>;
 }
