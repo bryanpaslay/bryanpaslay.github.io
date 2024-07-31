@@ -86,16 +86,18 @@ export const Sections : Array<Section> = [
         "endDate":new Date("10/1/2022"),
         "overview":"Onboarded existing vendors payments and receipts to our Batch Autopayment system.  ",
         "details": [
+            "Created scalable system using event driven architecture, queueing for asynchonous messages and guaranteed delivery",
+            "Domain specific modules for rapid development and deployment.",
             "Elicited requirements from the business and vendors to process payments made to and coming from vendors.  ",
             "Created workflows to handle all payments that could be automated with zero touch by claims adjusters.  ",
             "Created workflows to streamline payments for adjusters when manual intervention was required.  ",
             "Reduced manual hours spent by adjusters from 1000+ hours per month to 10 hours per month.  "
         ],
         "metrics" : [
-            
+            "Asynchronously process 1000's of payments per hour."
         ],
-        "tools" : [],
-        "skills" : []
+        "tools" : ["VSCode", "Powershell", "Visual Studio", "RabitMQ", "Pester"],
+        "skills" : ["Domain driven design", "Unit testing", "SQL Views/Sprocs/Query", "Database Schema Design"]
     },
     {
         id:5,
@@ -160,6 +162,8 @@ export const Sections : Array<Section> = [
         "endDate":new Date("9/1/2019"),
         "overview":"A unified claim portal for claims adjusters to perform all their duties over the lifetime of a claim.  ",
         "details": [
+            "Created React component library for reuse across teams and projects.",
+            "Created universal styling across the application using BootstrapCSS.",
             "Scalable front-end and back-end infrastructure.  ",
             "Integrated 15 disparate systems into one unified web portal.  ",
             "Defined and created views into the claims file to allow adjusters to analyze claim data in a meaningful manner depending on their role and current task.  ",

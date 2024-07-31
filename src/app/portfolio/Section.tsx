@@ -22,6 +22,6 @@ export default function PortfolieSection({id, title, details, overview, skills, 
             )}
         </ul>
         <div className="italic">Tools: {tools.map((tool => tool)).join(' | ')}</div>
-        <div className="italic">Skills: {skills.map((skill => <span>{skill}</span>)).join(' | ')}</div>
+        <div className="italic">Skills: {skills.map((skill => skill)).join(' | ')}</div>
     </div>;
 };
