@@ -18,7 +18,7 @@ export default function RootLayout({
       <html lang="en">
         <body>
           <Header></Header>
-          <section className="pt-32">
+          <section className="pt-32 py-3 px-10 ">
             {children}
           </section>
           </body>
