@@ -10,7 +10,9 @@
         @apply italic;
     }
     a{
-        @apply hover:font-bold;
+        @apply text-gray-500;
+        @apply active:text-blue-300;
+        @apply hover:text-blue-900;
     }
     p{
         @apply pb-5;

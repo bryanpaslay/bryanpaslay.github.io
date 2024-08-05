@@ -5,7 +5,7 @@ export interface Entry {
 
 export interface Subject {
     title:string,
-    overview?:string,
+    overview?:string[],
     book?: Book,
     problems?: Problem[],
     tools?:string[],
@@ -17,7 +17,7 @@ export interface Book{
     author:string
 }
 
-const bookCollection: {[key:string]: Book} = {
+const bookCollection =  {
     "BuidingMicroservices": {
         title:"Building Microservices: Designing Fine-Grained Systems",
         author:"Sam Newman"
@@ -30,6 +30,12 @@ const bookCollection: {[key:string]: Book} = {
         title:"Fundamentals of Software Architecture: An Engineering Approach",
         author:"Mark Richards & Neal Ford"
     }
+}
+
+const categories = {
+    "LeetCode": "LeetCode Problems",
+    Tech_Reading: "Reading a technical book",
+    'WebSite' : "Website enhancement & maintenance"
 }
 
 export interface Problem{
@@ -49,8 +55,8 @@ export const JournalEntries : Entry[]= [
         today : new Date('8/2/2024'),
         subjects: [
             {
-                title: "Leetcode problems",
-                overview: "Minimum swaps ",
+                title: categories.LeetCode,
+                overview: ["Minimum swaps "],
                 problems: [
                     {
                         name:"Minimum Swaps to Group All 1's Together II",
@@ -62,20 +68,20 @@ export const JournalEntries : Entry[]= [
             },
             {
                 title:"Docker study",
-                overview: "Docker study",
+                overview: ["Docker study"],
                 tools: ["Docker desktop"],
                 skills: ["Containerization"]
             },
             {
-                title: "Reading",
+                title: categories.Tech_Reading,
                 book: bookCollection["BuidingMicroservices"],
-                overview: "Read about different source control strategies Manyrepo vs Monorepo.  Different Deployment strategies for microservices.",
+                overview: ["Read about different source control strategies Manyrepo vs Monorepo.","Different Deployment strategies for microservices."],
                 tools: ["Kubernetes", "Git", ],
                 skills: ["Containerization"]
             },
             {
                 title: "Golf practice",
-                overview: "Worked on getting weight on the back foot without swaying. Getting rotation in the backswing",
+                overview: ["Worked on getting weight on the back foot without swaying. Getting rotation in the backswing"],
                 tools: ["Driver","2-hybrid","7-iron"],
                 skills: ["Weight shift", "Left arm close to body"]
             }
@@ -85,21 +91,34 @@ export const JournalEntries : Entry[]= [
         today:new Date('8/5/2024'),
         subjects :[
             {
-                title:"Leet code problems",
-                overview: "Question of the day",
+                title:categories.LeetCode,
+                overview: ["Question of the day", "Practice"],
                 problems: [
                     {
                         name:"Kth Distinct String in an Array",
                         link:'https://leetcode.com/problems/kth-distinct-string-in-an-array/',
                         category:'Arrays',
                         language: 'Python'
+                    },
+                    {
+                        name:"Isomorphic Strings",
+                        link:'https://leetcode.com/problems/isomorphic-strings/',
+                        category:'HashSet',
+                        language: 'Python'
                     }
-                    
                 ]
             },
             {
-                title:'Website work',
-                overview: 'Update the header and the menu to be responsive for mobile devices'
+                title:categories.WebSite,
+                overview: [
+                    'Update the header and the menu to be responsive for mobile devices',
+                    'Get daily status page working'
+                ]
+            },
+            {
+                title:categories.Tech_Reading,
+                book:bookCollection.DomainDrivenDesign
+
             }
         ]
     }

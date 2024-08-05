@@ -9,7 +9,7 @@ export default function(){
 
     const [isMenuOpen, setMenuOpen] = useState(false);
 
-    return <header id="header" className="bg-blue-100 fixed w-full">
+    return <header id="header" className="bg-gradient-to-b from-blue-300 to-white fixed w-full">
     <div className="container grid grid-cols-5 mx-auto">
     <button className="sm:hidden pt-7 px-5 space-y-2 relative" onClick={() => setMenuOpen(!isMenuOpen)}>
         <div className="w-8 h-0.5 bg-gray-600"></div>
@@ -29,7 +29,7 @@ export default function(){
     </button>
       <Image className="" src={'/hero.png'} alt="Image of me" width={100} height={100} />
       <div className="grid col-span-3 sm:col-span-4 grid-rows-1 content-center">
-        <div className="row-start-1 row-end-4 py-5 text-3xl">Bryan Paslay</div>
+        <div className="row-start-1 row-end-4 py-5 text-3xl font-mono">&lt;Bryan Paslay/&gt;</div>
         <nav className="hidden  sm:block">
           <ul className="grid grid-cols-5">
             <li className=""><Link className="hover:font-bold" href={`/`}>HOME</Link></li>
