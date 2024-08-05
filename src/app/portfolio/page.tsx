@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import PortfolieSection from "./Section";
 import {Sections} from "../../../public/portfolioData";
 

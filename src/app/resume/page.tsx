@@ -18,7 +18,7 @@ function useWindowSize() {
     return size;
   }
 
-export default function(){
+export default function Page(){
 
     const [width, height] = useWindowSize();
 
