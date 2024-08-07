@@ -97,7 +97,7 @@ export const JournalEntries : Entry[]= [
                     {
                         name:"Kth Distinct String in an Array",
                         link:'https://leetcode.com/problems/kth-distinct-string-in-an-array/',
-                        category:'Arrays',
+                        category:'Arrays, Greedy',
                         language: 'Python'
                     },
                     {
@@ -117,7 +117,41 @@ export const JournalEntries : Entry[]= [
             },
             {
                 title:categories.Tech_Reading,
-                book:bookCollection.DomainDrivenDesign
+                book:bookCollection.DomainDrivenDesign,
+                overview:['Chapter 4: Isolating the domain']
+            },
+        ]
+    },
+    {
+        today:new Date('8/6/2024'),
+        subjects :[
+            {
+                title:categories.LeetCode,
+                overview: ["Question of the day", "Practice"],
+                problems: [
+                    {
+                        name:"Minimum Number of Pushes to Type Word II",
+                        link:'https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/',
+                        category:'Arrays',
+                        language: 'Python'
+                    },
+                ]
+            },
+            {
+                title:categories.WebSite,
+                overview: [
+                    'Update daily journal',
+                ]
+            },
+            {
+                title:categories.Tech_Reading,
+                book:bookCollection.DomainDrivenDesign,
+                overview: [
+                    'Chapter 5: A model expressed in software',
+                    'Entities - Have a uniqueness about them that is beyond the data that makes them up',
+                    'Value Objects - Defined by their data and interchangable',
+                    'Services - '
+                ]
 
             }
         ]

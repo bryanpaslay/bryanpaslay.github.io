@@ -21,7 +21,7 @@ export default function RootLayout({
           <section className="pt-32 py-3 px-10 ">
             {children}
           </section>
-          </body>
+        </body>
       </html>
     )
   }

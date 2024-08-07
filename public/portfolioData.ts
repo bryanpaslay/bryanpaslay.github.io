@@ -19,16 +19,20 @@ export const Sections : Array<Section> = [
         "endDate":new Date("4/1/2024"),
         "overview":"Integrated Claim Portal web application and financial processing systems with a third-party vendor that processes personal injury protection claims. ",
         "details": [
+            "60% coding 40% meeting wtih stakeholders to define requirements, create stories, create architectural diagrams, determine application design.",
+            "Mapped vendors business domain to Pemco's business domain for medical treatment data.  By doing this we were able to use the existing web application for display and cut development time by months.",
             "Designed and built UI and workflows for display and capture of PIP data with React and Redux.",
-            "Streamlined and automated the payment process",
+            "Streamlined and automated payment processes",
             "Coordinated team of developers and business stakeholders to elicit requirements and negotiate timelines.",
             "Created documentation for development patterns and practices, system architecture, and maintenance of the application.",
             "Designed database schema for capture of new incoming and outgoing data"
         ],
         "metrics" : [
+            "Automated payment of 300+ payments per day to medical providers and claimants eliminating 10+ hours of manual work per day",
             "Reduced data entry errors by 60%",
             "Eliminated data duplication.",
-            "Reduced the manual work required by Personal Injury adjusters by 1000+ hours per month."
+            "Reduced the manual work required by Personal Injury adjusters by 1000+ hours per month.",
+            "Cut length of open medical claims by 50%"
         ],
         "tools" : [
             'Visual studio', 
@@ -36,9 +40,12 @@ export const Sections : Array<Section> = [
             'ReactJS',
             'Redux',
             'Webpack 5',
-            '.NET webapi'
+            '.NET webapi',
+            'C#',
+            'Python',
+            'Poweshell'
         ],
-        "skills" : []
+        "skills" : ["Event driven architecture", "Micro-kernal architecture"]
     },
     {
         id:2,

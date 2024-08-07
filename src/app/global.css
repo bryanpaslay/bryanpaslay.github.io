@@ -11,8 +11,8 @@
     }
     a{
         @apply text-gray-500;
-        @apply active:text-blue-300;
-        @apply hover:text-blue-900;
+        @apply active:text-cyan-300;
+        @apply hover:text-cyan-900;
     }
     p{
         @apply pb-5;
